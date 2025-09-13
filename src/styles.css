@@ -1,0 +1,201 @@
+/* === GLOBAL STYLES === */
+:root {
+     --primary-blue: #243c7e;
+     --secondary-blue: #2563eb;
+     --accent-yellow: #facc15;
+     --bg-light: #f9fafb;
+     --text-dark: #1f2937;
+}
+
+body {
+     margin: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: linear-gradient(to right, #e3f2fd, #bbdefb);
+     color: var(--text-dark);
+}
+
+/* === HEADER & NAVBAR === */
+.header {
+     background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
+     color: #fff;
+     padding: 15px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.header-title {
+     font-size: 22px;
+     font-weight: 600;
+     text-align: center;
+     flex: 1;
+}
+
+.img-logo {
+     width: 50px;
+     height: 50px;
+     border-radius: 10px;
+}
+
+.navbar {
+     background: linear-gradient(to right, #e3f2fd, #bbdefb);
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+     transition: all 0.3s ease;
+     border-radius: 8px;
+     padding: 8px 12px;
+     color: #000 !important;
+     font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+     background: #2563eb;
+     color: white !important;
+     transform: scale(1.05);
+     box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+/* === FOOTER === */
+footer {
+     background: var(--primary-blue);
+     color: white;
+     padding: 20px;
+     text-align: center;
+     margin-top: 40px;
+}
+
+/* === HOME PAGE === */
+.hero {
+     background: linear-gradient(120deg, var(--primary-blue), #38bdf8);
+     color: #fff;
+     text-align: center;
+     padding: 70px 20px 50px;
+     border-radius: 0 0 50px 50px;
+     margin-bottom: 35px;
+}
+
+.hero h2 {
+     font-size: 40px;
+     margin-bottom: 15px;
+}
+
+.about-box {
+     background: #f8faff;
+     border: 2px solid #0d47a1;
+     border-radius: 15px;
+     padding: 25px 30px;
+     text-align: justify;
+     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+     line-height: 1.8;
+     font-size: 16px;
+     color: #333;
+}
+
+.cards {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 25px;
+}
+
+.card-custom {
+     background: #fff;
+     padding: 25px;
+     border-radius: 15px;
+     border-top: 4px solid #38bdf8;
+     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+     transition: 0.3s;
+     min-height: 160px;
+     text-align: center;
+}
+
+.card-custom:hover {
+     transform: translateY(-8px) scale(1.03);
+     border-top: 4px solid var(--accent-yellow);
+}
+
+.card-custom img {
+     width: 100px;
+     height: 100px;
+     margin: 0 auto 10px auto;
+     display: block;
+}
+
+/* === ABOUT PAGE === */
+.about-page-section {
+     padding: 60px 20px;
+     max-width: 1100px;
+     margin: auto;
+}
+
+.about-page-section h2 {
+     color: #243c7e;
+     border-left: 4px solid #2d6fffcd;
+     padding-left: 10px;
+     margin-bottom: 20px;
+}
+
+.about-card {
+     background: white;
+     padding: 20px;
+     border-radius: 12px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     margin-bottom: 30px;
+}
+
+.scroll-box {
+     max-height: 300px;
+     overflow-y: auto;
+     padding-right: 10px;
+}
+
+/* === DEPARTMENTS PAGE === */
+.main-container {
+     display: flex;
+     min-height: calc(100vh - 150px);
+}
+
+.left-sidebar {
+     width: 250px;
+     padding: 25px;
+     margin: 20px;
+     background: #f8faff;
+     border-radius: 15px;
+}
+
+.main-content {
+     flex-grow: 1;
+     padding: 20px 40px;
+}
+
+.content-section {
+     padding: 40px;
+     background-color: #fff;
+     margin-bottom: 20px;
+     border-radius: 12px;
+}
+
+.hod-card {
+     display: flex;
+     align-items: center;
+     gap: 25px;
+     margin-bottom: 30px;
+}
+
+.hod-card img {
+     width: 220px;
+     border-radius: 12px;
+}
+
+/* === ADMISSION & CONTACT PAGES === */
+.form-card,
+.contact-info,
+.contact-form {
+     background: white;
+     border-radius: 12px;
+     padding: 30px;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+     margin-bottom: 20px;
+}
