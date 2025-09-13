@@ -1,14 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
+import sitLogo from '../assets/img/sit.jpeg';
+import founderLogo from '../assets/img/FOUNDER.jpeg';
 
 const Header = () => {
      return (
           <>
                <header className="header">
-                    <span><img className="img-logo" src="img/sit.jpeg" alt="SIT Logo" /></span>
+                    <span><img className="img-logo" src={sitLogo} alt="SIT Logo" /></span>
                     <span className="header-title">SESHASAYEE INSTITUTE OF TECHNOLOGY, Trichy</span>
-                    <span><img className="img-logo" src="img/FOUNDER.jpeg" alt="Founder" /></span>
+                    <span><img className="img-logo" src={founderLogo} alt="Founder" /></span>
                </header>
                <nav className="navbar navbar-expand-lg sticky-top">
                     <div className="container-fluid">
@@ -22,7 +24,7 @@ const Header = () => {
                                         <NavLink className="nav-link text-dark fw-semibold" to="/" end>Home</NavLink>
                                    </li>
                                    <li className="nav-item">
-                                        <NavLink className="nav-link text-dark fw-semibold" to="/departments">Departments</NavLink>
+                                        <NavLink className="nav-link text-dark fw-semibold" to="/department">Departments</NavLink>
                                    </li>
                                    <li className="nav-item">
                                         <NavLink className="nav-link text-dark fw-semibold" to="/admission">Admission</NavLink>
