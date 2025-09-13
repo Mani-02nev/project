@@ -1,10 +1,6 @@
-/*
-  Remove the default Vite flexbox styles that are causing the blank screen.
-  Your App.css file will handle the body's background and font.
-*/
 body {
   margin: 0;
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
