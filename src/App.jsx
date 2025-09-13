@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <header className="header">
+        <h1>Welcome to My College Site 🎓</h1>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Departments</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+
+      <main className="content">
+        <section>
+          <h2>About Us</h2>
+          <p>
+            This is a demo React + Vite project for a college website.
+            You can edit this page and add more details about your institution.
+          </p>
+        </section>
+
+        <section>
+          <h2>Departments</h2>
+          <ul>
+            <li>Computer Science</li>
+            <li>Electronics</li>
+            <li>Mechanical</li>
+            <li>Civil</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer className="footer">
+        <p>© 2025 My College Site | Powered by React + Vite</p>
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
